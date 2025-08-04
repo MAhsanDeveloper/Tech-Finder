@@ -1,0 +1,9 @@
+# Windows junk files
+Thumbs.db
+desktop.ini
+
+# VS Code settings (optional, personal)
+.vscode/
+
+# Zip files (used for uploading the extension)
+*.zip

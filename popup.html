@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="icons/logo.png" alt="Tech Finder" class="logo">
+      <h2>Tech Finder</h2>
+    </div>
+    
+    <div class="content">
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <span>Analyzing page...</span>
+      </div>
+      
+      <div id="results" class="results hidden">
+        <div class="tech-category" id="frameworks-section">
+          <h3>🧩 JavaScript Frameworks</h3>
+          <ul id="frameworks-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="libraries-section">
+          <h3>📚 JavaScript Libraries</h3>
+          <ul id="libraries-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="ui-frameworks-section">
+          <h3>🎨 UI Frameworks</h3>
+          <ul id="ui-frameworks-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="styling-section">
+          <h3>💅 CSS & Styling</h3>
+          <ul id="styling-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="analytics-section">
+          <h3>📊 Analytics</h3>
+          <ul id="analytics-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="tag-managers-section">
+          <h3>🏷️ Tag Managers</h3>
+          <ul id="tag-managers-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="advertising-section">
+          <h3>📢 Advertising</h3>
+          <ul id="advertising-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="security-section">
+          <h3>🔒 Security</h3>
+          <ul id="security-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="cdn-section">
+          <h3>🌐 CDN</h3>
+          <ul id="cdn-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="paas-section">
+          <h3>☁️ PaaS</h3>
+          <ul id="paas-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="reverse-proxies-section">
+          <h3>🔄 Reverse Proxies</h3>
+          <ul id="reverse-proxies-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="customer-data-section">
+          <h3>📊 Customer Data Platform</h3>
+          <ul id="customer-data-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="payment-section">
+          <h3>💳 Payment Processors</h3>
+          <ul id="payment-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="live-chat-section">
+          <h3>💬 Live Chat</h3>
+          <ul id="live-chat-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="editors-section">
+          <h3>✏️ Rich Text Editors</h3>
+          <ul id="editors-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="issue-trackers-section">
+          <h3>🐛 Issue Trackers</h3>
+          <ul id="issue-trackers-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="tools-section">
+          <h3>🔧 Build Tools</h3>
+          <ul id="tools-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="performance-section">
+          <h3>⚡ Performance</h3>
+          <ul id="performance-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="pwa-section">
+          <h3>📱 PWA</h3>
+          <ul id="pwa-list" class="tech-list"></ul>
+        </div>
+        
+        <div class="tech-category" id="misc-section">
+          <h3>🔍 Miscellaneous</h3>
+          <ul id="misc-list" class="tech-list"></ul>
+        </div>
+      </div>
+      
+      <div id="error" class="error hidden">
+        <p>❌ Cannot analyze this page</p>
+        <small>This extension cannot access chrome:// pages, extension pages, or some restricted sites.</small>
+      </div>
+      
+      <div id="no-tech" class="no-tech hidden">
+        <p>🤷‍♂️ No technologies detected</p>
+        <small>This page might be using technologies we don't recognize yet.</small>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <button id="refresh-btn" class="refresh-btn">🔄 Refresh Analysis</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
